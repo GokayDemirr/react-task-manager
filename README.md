@@ -1,68 +1,26 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-=======
-# React Task Manager App
-
-## Project Description
-This is a Task Manager application that allows users to manage their personal tasks. The app provides features such as creating, editing, deleting, and updating the status of tasks. It is built with **React** for the frontend, **Bootstrap** for styling, and **Microsoft SQL Server** for the backend database.
-
-## Technologies Used
-- **Frontend**: React, Bootstrap
-- **Backend**: Node.js, Express
-- **Database**: Microsoft SQL Server
-- **API**: RESTful API
+A simple task manager application built with React, TypeScript, and Bootstrap. This app allows users to manage their tasks by adding, editing, and deleting tasks. The tasks are saved in the browser's local storage to persist data between page reloads.
 
 ## Features
-- Create, Edit, and Delete tasks
-- Update task status (Pending, In Progress, Completed)
-- Responsive design for mobile and desktop
->>>>>>> dd8a0fee87170b167944de39adcbe662cf308406
+
+- Add, edit, and delete tasks
+- Mark tasks as completed
+- Store tasks in the browser's `localStorage`
+- Responsive design with Bootstrap
+
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces
+- **TypeScript**: Superset of JavaScript that adds static typing
+- **Bootstrap**: CSS framework for responsive design
+- **Vite**: Next-generation, fast build tool for modern web projects
+- **localStorage**: For persisting task data
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/GokayDemirr/react-task-manager.git
+   ```
