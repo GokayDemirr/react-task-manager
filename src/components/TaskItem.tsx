@@ -5,10 +5,6 @@ interface TaskItemProps {
 }
 
 const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
-  const handleDelete = () => {};
-
-  const handleUpdateStatus = () => {};
-
   return (
     <>
       <td>{task.text}</td>
@@ -16,12 +12,13 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
       <td>{task.priority}</td>
       <td>{task.dueDate.toLocaleDateString("tr-TR")}</td>
       <td>
-        <button className="btn btn-primary btn-sm" onClick={handleUpdateStatus}>
-          Update Status
-        </button>
-        <button className="btn btn-danger btn-sm" onClick={handleDelete}>
-          Delete
-        </button>
+        <select className="form-select">
+          <option selected>Status</option>
+          <option value={"To do"}>To do</option>
+          <option value={"In progress"}>In progress</option>
+          <option value={"Done"}>Done</option>
+        </select>
+        <button className="btn btn-danger btn-sm">Delete</button>
       </td>
     </>
   );
